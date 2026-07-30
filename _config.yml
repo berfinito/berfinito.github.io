@@ -1,0 +1,72 @@
+title: Berfin Celik
+tagline: ML/AI Engineer
+description: >-
+  ML Engineer with MSc CS & AI (Distinction, University of Bradford).
+  Builds NLP pipelines, LLM fine-tuning systems, RAG architectures, and
+  speech models for low-resource languages. Based in Leeds, UK.
+url: "https://berfinito.github.io"
+baseurl: ""
+
+author:
+  name: Berfin Celik
+  email: berfincelik0@outlook.com
+  github: berfinito
+  linkedin: berfinito
+  location: Leeds, UK
+
+# Build
+theme: null
+markdown: kramdown
+highlighter: rouge
+permalink: /:categories/:title/
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    block:
+      line_numbers: true
+
+# Collections
+collections:
+  projects:
+    output: true
+    permalink: /projects/:name/
+  certifications:
+    output: false
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "page"
+  - scope:
+      path: ""
+    values:
+      layout: "page"
+
+# Plugins (all GitHub Pages safe)
+paginate: 6
+paginate_path: "/blog/page:num/"
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-paginate
+
+# Exclude from build
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - README.md
+  - .git
