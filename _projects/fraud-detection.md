@@ -15,7 +15,6 @@ tags:
 status: completed
 featured: true
 date: 2023-11-01
-github: https://github.com/berfinito
 ---
 
 ## Overview

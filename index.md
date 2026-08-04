@@ -27,6 +27,16 @@ title: Home
     </div>
   </dl>
 
+  <p class="hero-bio">ML engineer with a background in backend systems.
+  MSc CS &amp; AI (Distinction). Building NLP pipelines,
+  LLM fine-tuning systems, and speech models for
+  low-resource languages.</p>
+
+  <div class="hero-actions">
+    <a href="/projects/" class="btn btn-primary">View Projects</a>
+    <a href="/assets/cv.pdf" class="btn btn-ghost" download>Download CV</a>
+  </div>
+
   <div class="hero-social">
     <a href="https://github.com/berfinito"
        target="_blank" rel="noopener"
@@ -58,7 +68,7 @@ title: Home
       </svg>
       linkedin.com/in/berfinito
     </a>
-    <a href="mailto:berfincelik0@outlook.com" class="social-pill" aria-label="Email">
+    <a href="mailto:berfincelik0@outlook.com?subject=Hello%20Berfin" class="social-pill" aria-label="Email">
       <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
         <rect x="2" y="4" width="20" height="16" rx="2"/>
@@ -66,80 +76,6 @@ title: Home
       </svg>
       berfincelik0@outlook.com
     </a>
-  </div>
-
-</section>
-
-<section class="metrics-bar">
-  <div class="metric-item">
-    <div class="metric-num" data-target="96.4">96.4<span style="font-size:0.7em">%</span></div>
-    <div class="metric-label">Deepfake detection accuracy</div>
-  </div>
-  <div class="metric-item">
-    <div class="metric-num" data-target="220">220K<span style="font-size:0.7em">+</span></div>
-    <div class="metric-label">Audio samples processed</div>
-  </div>
-  <div class="metric-item">
-    <div class="metric-num" data-target="600">600<span style="font-size:0.7em">+</span></div>
-    <div class="metric-label">QA pairs generated</div>
-  </div>
-  <div class="metric-item">
-    <div class="metric-num" data-target="8.3">8.3<span style="font-size:0.7em">%</span></div>
-    <div class="metric-label">Turkish ASR WER</div>
-  </div>
-  <div class="metric-item">
-    <div class="metric-num" data-target="7">7</div>
-    <div class="metric-label">Projects shipped</div>
-  </div>
-</section>
-
-<section class="home-section">
-
-  <div class="section-header">
-    <h2 class="section-title">
-      <span class="section-title-prefix">// </span>Selected Projects
-    </h2>
-    <a href="/projects/" class="section-link">All projects &rarr;</a>
-  </div>
-
-  {% assign featured_all = site.projects | where: "featured", true | sort: "date" | reverse %}
-  {% if featured_all.size == 0 %}
-    {% assign featured_all = site.projects | sort: "date" | reverse %}
-  {% endif %}
-
-  <div class="card-grid">
-    {% assign shown = 0 %}
-    {% for project in featured_all %}{% if shown < 3 %}
-    {% assign shown = shown | plus: 1 %}
-    <div class="card">
-      {% if project.label %}
-        <span class="card-label">{{ project.label }}</span>
-      {% elsif project.tags.size > 0 %}
-        <span class="card-label">{{ project.tags | first }}</span>
-      {% endif %}
-      <h3><a href="{{ project.url | relative_url }}">{{ project.title }}</a></h3>
-      {% if project.description %}
-        <p class="card-desc">{{ project.description }}</p>
-      {% elsif project.excerpt %}
-        <p class="card-desc">{{ project.excerpt | strip_html | truncate: 120 }}</p>
-      {% endif %}
-      <div class="card-footer">
-        {% if project.tags %}
-          <div class="post-tags">
-            {% for tag in project.tags limit: 3 %}
-              <span class="tag">{{ tag }}</span>
-            {% endfor %}
-          </div>
-        {% endif %}
-        {% if project.github %}
-          <a href="{{ project.github }}" target="_blank" rel="noopener"
-             class="btn btn-ghost" style="padding:.3rem .7rem;font-size:.75rem;">
-            GitHub &rarr;
-          </a>
-        {% endif %}
-      </div>
-    </div>
-    {% endif %}{% endfor %}
   </div>
 
 </section>

@@ -32,16 +32,9 @@ collections:
   projects:
     output: true
     permalink: /projects/:name/
-  certifications:
-    output: false
 
 # Defaults
 defaults:
-  - scope:
-      path: ""
-      type: "posts"
-    values:
-      layout: "post"
   - scope:
       path: ""
       type: "projects"
@@ -52,15 +45,10 @@ defaults:
     values:
       layout: "page"
 
-# Plugins (all GitHub Pages safe)
-paginate: 6
-paginate_path: "/blog/page:num/"
-
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-sitemap
-  - jekyll-paginate
 
 # Exclude from build
 exclude:

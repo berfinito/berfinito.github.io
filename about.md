@@ -50,83 +50,6 @@ permalink: /about/
 
 ---
 
-## What I work on
-
-<div class="interest-grid">
-  <div class="interest-card">
-    <span class="interest-icon">⟨/⟩</span>
-    <div>
-      <strong>NLP &amp; Large Language Models</strong>
-      <p>Fine-tuning, retrieval-augmented generation, prompt engineering, and evaluation
-      frameworks. I care about making LLMs actually useful in constrained, real-world settings.</p>
-    </div>
-  </div>
-  <div class="interest-card">
-    <span class="interest-icon">⚙</span>
-    <div>
-      <strong>Backend &amp; ML Infrastructure</strong>
-      <p>Serving layers, feature pipelines, experiment tracking, model registries.
-      The unglamorous plumbing that keeps ML systems reliable past demo day.</p>
-    </div>
-  </div>
-  <div class="interest-card">
-    <span class="interest-icon">∂</span>
-    <div>
-      <strong>Data-Centric AI</strong>
-      <p>Better data beats bigger models, most of the time. Labelling pipelines,
-      data quality, and point-in-time correct feature engineering.</p>
-    </div>
-  </div>
-</div>
-
-## Also building
-
-<div class="also-building">
-
-  <div class="also-item">
-    <div class="also-item-header">
-      <strong>Android Development</strong>
-      <span class="also-item-status">personal projects</span>
-    </div>
-    <p>
-      Building Android applications as a way to develop end-to-end product instincts —
-      from UI design decisions through to data persistence and API integration.
-      Working in Java and Kotlin. Useful context for thinking about on-device ML
-      constraints and how models behave outside a server environment.
-    </p>
-    <div class="post-tags" style="margin-top:.6rem;">
-      <span class="tag">Java</span>
-      <span class="tag">Kotlin</span>
-      <span class="tag">Android Studio</span>
-      <span class="tag">SQLite</span>
-    </div>
-  </div>
-
-  <div class="also-item">
-    <div class="also-item-header">
-      <strong>Networks &amp; Distributed Systems</strong>
-      <span class="also-item-status">ongoing interest</span>
-    </div>
-    <p>
-      Network Engineering and Computer Networks were two of the courses I took most
-      seriously at Bahçeşehir — TCP/IP stack, routing protocols, socket programming,
-      and distributed system fundamentals. That grounding shows up directly in how I
-      think about model serving latency, feature store architecture, and the
-      <a href="/projects/p2p-file-sharing/">P2P file sharing</a> and
-      <a href="/projects/reader-writer-problem/">concurrency</a> projects.
-    </p>
-    <div class="post-tags" style="margin-top:.6rem;">
-      <span class="tag">TCP/IP</span>
-      <span class="tag">Socket Programming</span>
-      <span class="tag">Routing Protocols</span>
-      <span class="tag">Network Security</span>
-    </div>
-  </div>
-
-</div>
-
----
-
 ## Education
 
 <div class="timeline">
@@ -368,3 +291,17 @@ permalink: /about/
     <div class="lang-level">Native&nbsp;<span class="lang-note">C2</span></div>
   </div>
 </div>
+
+---
+
+## Certifications
+
+Completed courses on Coursera. Each certificate is publicly verifiable.
+
+- Introduction to Artificial Intelligence (AI) · IBM · Coursera · Aug 2024 · <a href="https://coursera.org/verify/0EX6GPBWPMFF" target="_blank" rel="noopener">Verify ↗</a>
+- Introduction to Software Engineering · IBM · Coursera · Aug 2024 · <a href="https://coursera.org/verify/QA24L68WR9WV" target="_blank" rel="noopener">Verify ↗</a>
+- Getting Started with Git and GitHub · IBM · Coursera · Aug 2023 · <a href="https://coursera.org/verify/74S52WHGE4DN" target="_blank" rel="noopener">Verify ↗</a>
+- Introduction to Back-End Development · Meta · Coursera · Aug 2023 · <a href="https://coursera.org/verify/5QJJJUGN43UN" target="_blank" rel="noopener">Verify ↗</a>
+- Introduction to Front-End Development · Meta · Coursera · Aug 2023 · <a href="https://coursera.org/verify/BHN4FKF9XV5Y" target="_blank" rel="noopener">Verify ↗</a>
+- Introduction to Databases · Meta · Coursera · Aug 2023 · <a href="https://coursera.org/verify/45RVRDUAZP5Q" target="_blank" rel="noopener">Verify ↗</a>
+- Introduction to Databases for Back-End Development · Meta · Coursera · Aug 2023 · <a href="https://coursera.org/verify/M2356MX48GB3" target="_blank" rel="noopener">Verify ↗</a>

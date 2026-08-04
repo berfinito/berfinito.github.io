@@ -45,7 +45,7 @@
       </button>
 
       <ul class="nav-links" id="nav-links" role="list">
-        {% assign nav_pages = "Home,/|About,/about/|Projects,/projects/|Certifications,/certifications/|Uses,/uses/|Contact,/contact/" | split: "|" %}
+        {% assign nav_pages = "Home,/|About,/about/|Projects,/projects/" | split: "|" %}
         {% for item in nav_pages %}
           {% assign parts = item | split: "," %}
           {% assign nav_label = parts[0] %}
@@ -78,7 +78,6 @@
         {% if site.author.email %}
           <a href="mailto:{{ site.author.email }}">Email</a>
         {% endif %}
-        <a href="{{ '/uses/' | relative_url }}">Uses</a>
       </nav>
       <p class="footer-copy">
         &copy; {{ 'now' | date: "%Y" }} {{ site.author.name }}
