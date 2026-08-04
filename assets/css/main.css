@@ -862,6 +862,7 @@ tr:last-child td { border-bottom: none; }
   padding: 0.1em 0.45em;
   border-radius: 3px;
   white-space: nowrap;
+  display: inline-block;
 }
 
 /* CV download button */
@@ -1147,6 +1148,8 @@ tr:last-child td { border-bottom: none; }
   .cv-download { flex: 1; justify-content: center; }
   .tech-group { flex-direction: column; gap: 0.4rem; }
   .tech-group-label { width: auto; }
+  .about-text { width: 100%; }
+  .mono-inline { white-space: normal; }
 }
 
 /* ============================================================
