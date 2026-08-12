@@ -2,7 +2,7 @@
 layout: page
 title: About
 label: About me
-description: ML/AI Engineer based in Leeds — NLP, production systems, and low-resource languages.
+description:
 permalink: /about/
 ---
 
@@ -24,25 +24,47 @@ permalink: /about/
   </div>
   <div class="about-text">
     <p>
-      I studied Computer Engineering at <strong>Bahçeşehir University</strong> in Istanbul,
-      then spent two years building production backend systems — .NET Core
-      microservices, Redis caching, Docker deployments — across software
-      houses in Istanbul and Leeds.
+      I'm Berfin, a software engineer based in Leeds. I've known
+      I wanted to work in software from a young age, and everything
+      since has followed from that.
     </p>
     <p>
-      At each role I kept running into the same thing: the hard problems
-      weren't in the code, they were in what the data meant. That's what
-      pushed me into ML. I moved to the UK for an <span class="mono-inline">MSc in Computer Science
-      &amp; Artificial Intelligence</span> at the University of Bradford and graduated
-      with Distinction.
+      I studied Computer Engineering at Bahçeşehir University in
+      Istanbul, graduating in 2021. Alongside my studies I worked
+      as a student assistant in the engineering faculty, helping
+      with lab sessions and course preparation. During my final
+      year I interned at Turkuvaz Media Group, one of Turkey's
+      largest media conglomerates, where I worked in IT supporting
+      the infrastructure and internal systems of an organization
+      operating at real scale.
     </p>
     <p>
-      Now I work at the intersection: building ML systems that actually ship —
-      NLP pipelines, LLM fine-tuning, RAG architectures, and speech models
-      for languages most datasets ignore.
+      After graduating I joined Argevi as a software engineer,
+      building backend systems with ASP.NET Core across a project
+      management tool and an e-commerce platform. The project I
+      remember most from that time is implementing OPC communication,
+      an industrial protocol the company had wanted to use but had not.
+      We started from scratch, figured it out, and got it into production.
     </p>
     <p>
-      Based in <strong>Leeds, UK</strong>. Open to remote and hybrid roles.
+      I then joined Path as a .NET developer, where I worked across
+      several projects with different technology stacks. One of them
+      was a school portal system I was part of from the very beginning.
+      I was involved at every stage, from architecture through to
+      backend services, caching, and deployment. The kind of project
+      where you see the full picture, not just one slice of it.
+    </p>
+    <p>
+      I moved to Leeds to do an MSc in Computer Science and Artificial
+      Intelligence at the University of Bradford and graduated with a
+      Distinction. I wanted to understand AI properly, not just work
+      around it. What I found is that ML engineering and backend
+      engineering ask the same questions: what breaks, what scales,
+      what you can actually ship.
+    </p>
+    <p>
+      I'm looking for work that keeps challenging me, and every role
+      so far has done exactly that.
     </p>
   </div>
 
@@ -57,7 +79,7 @@ permalink: /about/
   <div class="timeline-item">
     <div class="timeline-marker"></div>
     <div class="timeline-body">
-      <div class="timeline-period">2024 — 2025</div>
+      <div class="timeline-period">2024 - 2025</div>
       <div class="timeline-title">MSc Computer Science &amp; Artificial Intelligence
         <span class="timeline-badge distinction">Distinction</span>
       </div>
@@ -73,7 +95,7 @@ permalink: /about/
   <div class="timeline-item">
     <div class="timeline-marker"></div>
     <div class="timeline-body">
-      <div class="timeline-period">2016 — 2021</div>
+      <div class="timeline-period">2016 - 2021</div>
       <div class="timeline-title">BSc Computer Engineering</div>
       <div class="timeline-place">Bahçeşehir University · Istanbul, Turkey</div>
       <p class="timeline-desc">
@@ -96,7 +118,7 @@ permalink: /about/
   <div class="timeline-item">
     <div class="timeline-marker"></div>
     <div class="timeline-body">
-      <div class="timeline-period">Dec 2023 — May 2024</div>
+      <div class="timeline-period">Dec 2023 - May 2024</div>
       <div class="timeline-title">Junior .NET Developer</div>
       <div class="timeline-place">Path Product &amp; Software House · Leeds, UK</div>
       <p class="timeline-desc">
@@ -118,7 +140,7 @@ permalink: /about/
   <div class="timeline-item">
     <div class="timeline-marker"></div>
     <div class="timeline-body">
-      <div class="timeline-period">Mar 2022 — Jun 2023</div>
+      <div class="timeline-period">Mar 2022 - Jun 2023</div>
       <div class="timeline-title">Software Engineer</div>
       <div class="timeline-place">Argevi Software &amp; Automation · Istanbul, TR</div>
       <p class="timeline-desc">
@@ -140,7 +162,7 @@ permalink: /about/
   <div class="timeline-item">
     <div class="timeline-marker"></div>
     <div class="timeline-body">
-      <div class="timeline-period">Dec 2020 — Mar 2021</div>
+      <div class="timeline-period">Dec 2020 - Mar 2021</div>
       <div class="timeline-title">IT Intern</div>
       <div class="timeline-place">Turkuvaz Media Group · Istanbul, TR</div>
       <p class="timeline-desc">
@@ -154,7 +176,7 @@ permalink: /about/
   <div class="timeline-item">
     <div class="timeline-marker"></div>
     <div class="timeline-body">
-      <div class="timeline-period">Nov 2019 — Mar 2020</div>
+      <div class="timeline-period">Nov 2019 - Mar 2020</div>
       <div class="timeline-title">Student Assistant</div>
       <div class="timeline-place">Bahçeşehir University Engineering Faculty · Istanbul, TR</div>
       <p class="timeline-desc">
@@ -294,14 +316,25 @@ permalink: /about/
 
 ---
 
-## Certifications
+## // Certifications
 
-Completed courses on Coursera. Each certificate is publicly verifiable.
+IBM - Introduction to Artificial Intelligence (AI)
+Coursera, Aug 2024 — <a href="https://coursera.org/verify/0EX6GPBWPMFF" target="_blank" rel="noopener">Verify ↗</a>
 
-- Introduction to Artificial Intelligence (AI) · IBM · Coursera · Aug 2024 · <a href="https://coursera.org/verify/0EX6GPBWPMFF" target="_blank" rel="noopener">Verify ↗</a>
-- Introduction to Software Engineering · IBM · Coursera · Aug 2024 · <a href="https://coursera.org/verify/QA24L68WR9WV" target="_blank" rel="noopener">Verify ↗</a>
-- Getting Started with Git and GitHub · IBM · Coursera · Aug 2023 · <a href="https://coursera.org/verify/74S52WHGE4DN" target="_blank" rel="noopener">Verify ↗</a>
-- Introduction to Back-End Development · Meta · Coursera · Aug 2023 · <a href="https://coursera.org/verify/5QJJJUGN43UN" target="_blank" rel="noopener">Verify ↗</a>
-- Introduction to Front-End Development · Meta · Coursera · Aug 2023 · <a href="https://coursera.org/verify/BHN4FKF9XV5Y" target="_blank" rel="noopener">Verify ↗</a>
-- Introduction to Databases · Meta · Coursera · Aug 2023 · <a href="https://coursera.org/verify/45RVRDUAZP5Q" target="_blank" rel="noopener">Verify ↗</a>
-- Introduction to Databases for Back-End Development · Meta · Coursera · Aug 2023 · <a href="https://coursera.org/verify/M2356MX48GB3" target="_blank" rel="noopener">Verify ↗</a>
+IBM - Introduction to Software Engineering
+Coursera, Aug 2024 — <a href="https://coursera.org/verify/QA24L68WR9WV" target="_blank" rel="noopener">Verify ↗</a>
+
+IBM - Getting Started with Git and GitHub
+Coursera, Aug 2023 — <a href="https://coursera.org/verify/74S52WHGE4DN" target="_blank" rel="noopener">Verify ↗</a>
+
+Meta - Introduction to Back-End Development
+Coursera, Aug 2023 — <a href="https://coursera.org/verify/5QJJJUGN43UN" target="_blank" rel="noopener">Verify ↗</a>
+
+Meta - Introduction to Front-End Development
+Coursera, Aug 2023 — <a href="https://coursera.org/verify/BHN4FKF9XV5Y" target="_blank" rel="noopener">Verify ↗</a>
+
+Meta - Introduction to Databases
+Coursera, Aug 2023 — <a href="https://coursera.org/verify/45RVRDUAZP5Q" target="_blank" rel="noopener">Verify ↗</a>
+
+Meta - Introduction to Databases for Back-End Development
+Coursera, Aug 2023 — <a href="https://coursera.org/verify/M2356MX48GB3" target="_blank" rel="noopener">Verify ↗</a>
