@@ -14,7 +14,6 @@ tags:
   - Python
 status: completed
 featured: true
-date: 2024-03-01
 github: https://github.com/berfinito/Chatbot
 demo: https://huggingface.co/spaces/berfinito
 ---

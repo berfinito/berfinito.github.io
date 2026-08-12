@@ -13,8 +13,7 @@ permalink: /projects/
 </div>
 
 <div class="card-grid">
-  {% assign sorted_projects = site.projects | sort: "date" | reverse %}
-  {% for project in sorted_projects %}
+  {% for project in site.projects %}
     <div class="card">
 
       <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:.5rem;">
@@ -23,14 +22,9 @@ permalink: /projects/
         {% elsif project.tags.size > 0 %}
           <span class="card-label">{{ project.tags | first }}</span>
         {% endif %}
-        {% if project.status %}
-          <span class="project-status project-status--{{ project.status | slugify }}">
-            {{ project.status }}
-          </span>
-        {% endif %}
       </div>
 
-      <h3><a href="{{ project.url | relative_url }}">{{ project.title }}</a></h3>
+      <h3><a href="{{ project.github }}" target="_blank" rel="noopener">{{ project.title }}</a></h3>
 
       {% if project.description %}
         <p class="card-desc">{{ project.description }}</p>
@@ -45,20 +39,12 @@ permalink: /projects/
             <span class="tag" style="color:var(--text-faint);">+{{ project.tags.size | minus: 4 }}</span>
           {% endif %}
         </div>
-        <div style="display:flex;gap:.4rem;flex-shrink:0;">
-          {% if project.github %}
-            <a href="{{ project.github }}" target="_blank" rel="noopener"
-               class="btn btn-ghost" style="padding:.3rem .7rem;font-size:.75rem;">
-              GitHub →
-            </a>
-          {% endif %}
-          {% if project.demo %}
-            <a href="{{ project.demo }}" target="_blank" rel="noopener"
-               class="btn btn-primary" style="padding:.3rem .7rem;font-size:.75rem;">
-              Demo ↗
-            </a>
-          {% endif %}
-        </div>
+        {% if project.demo %}
+          <a href="{{ project.demo }}" target="_blank" rel="noopener"
+             class="btn btn-primary" style="padding:.3rem .7rem;font-size:.75rem;flex-shrink:0;">
+            Demo ↗
+          </a>
+        {% endif %}
       </div>
     </div>
   {% endfor %}

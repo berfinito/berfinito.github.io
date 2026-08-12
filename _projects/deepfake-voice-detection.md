@@ -14,7 +14,6 @@ tags:
   - Python
 status: completed
 featured: true
-date: 2024-01-15
 github: https://github.com/berfinito/DeepFakeAudioDetection
 ---
 

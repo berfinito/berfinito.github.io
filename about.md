@@ -24,9 +24,7 @@ permalink: /about/
   </div>
   <div class="about-text">
     <p>
-      I'm Berfin, a software engineer based in Leeds. I've known
-      I wanted to work in software from a young age, and everything
-      since has followed from that.
+      I'm Berfin, an ML engineer with a backend background, based in Leeds.
     </p>
     <p>
       I studied Computer Engineering at Bahçeşehir University in
@@ -63,8 +61,8 @@ permalink: /about/
       what you can actually ship.
     </p>
     <p>
-      I'm looking for work that keeps challenging me, and every role
-      so far has done exactly that.
+      Since graduating I have been building and shipping projects
+      independently. The work listed on this site covers that period.
     </p>
   </div>
 
@@ -233,11 +231,7 @@ permalink: /about/
     <span class="tech-group-label">Data</span>
     <div class="post-tags">
       <span class="tag tag-primary">pandas</span>
-      <span class="tag tag-primary">dbt</span>
-      <span class="tag">Airflow</span>
-      <span class="tag">BigQuery</span>
-      <span class="tag">Spark</span>
-      <span class="tag">DuckDB</span>
+      <span class="tag">numpy</span>
     </div>
   </div>
   <div class="tech-group">
@@ -266,10 +260,6 @@ permalink: /about/
       <span class="tag tag-primary">GitHub Actions</span>
       <span class="tag">Kubernetes</span>
       <span class="tag">RabbitMQ</span>
-      <span class="tag">Kafka</span>
-      <span class="tag">Prometheus</span>
-      <span class="tag">MLflow</span>
-      <span class="tag">Weights &amp; Biases</span>
     </div>
   </div>
   <div class="tech-group">
@@ -277,24 +267,6 @@ permalink: /about/
     <div class="post-tags">
       <span class="tag tag-primary">GCP</span>
       <span class="tag tag-primary">AWS</span>
-      <span class="tag">SageMaker</span>
-      <span class="tag">Terraform</span>
-    </div>
-  </div>
-  <div class="tech-group">
-    <span class="tech-group-label">Mobile</span>
-    <div class="post-tags">
-      <span class="tag">Kotlin</span>
-      <span class="tag">Java (Android)</span>
-      <span class="tag">Android Studio</span>
-    </div>
-  </div>
-  <div class="tech-group">
-    <span class="tech-group-label">Networking</span>
-    <div class="post-tags">
-      <span class="tag">TCP/IP</span>
-      <span class="tag">Socket Programming</span>
-      <span class="tag">Network Security</span>
     </div>
   </div>
 </div>
@@ -314,27 +286,3 @@ permalink: /about/
   </div>
 </div>
 
----
-
-## // Certifications
-
-IBM - Introduction to Artificial Intelligence (AI)
-Coursera, Aug 2024 — <a href="https://coursera.org/verify/0EX6GPBWPMFF" target="_blank" rel="noopener">Verify ↗</a>
-
-IBM - Introduction to Software Engineering
-Coursera, Aug 2024 — <a href="https://coursera.org/verify/QA24L68WR9WV" target="_blank" rel="noopener">Verify ↗</a>
-
-IBM - Getting Started with Git and GitHub
-Coursera, Aug 2023 — <a href="https://coursera.org/verify/74S52WHGE4DN" target="_blank" rel="noopener">Verify ↗</a>
-
-Meta - Introduction to Back-End Development
-Coursera, Aug 2023 — <a href="https://coursera.org/verify/5QJJJUGN43UN" target="_blank" rel="noopener">Verify ↗</a>
-
-Meta - Introduction to Front-End Development
-Coursera, Aug 2023 — <a href="https://coursera.org/verify/BHN4FKF9XV5Y" target="_blank" rel="noopener">Verify ↗</a>
-
-Meta - Introduction to Databases
-Coursera, Aug 2023 — <a href="https://coursera.org/verify/45RVRDUAZP5Q" target="_blank" rel="noopener">Verify ↗</a>
-
-Meta - Introduction to Databases for Back-End Development
-Coursera, Aug 2023 — <a href="https://coursera.org/verify/M2356MX48GB3" target="_blank" rel="noopener">Verify ↗</a>

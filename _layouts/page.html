@@ -19,16 +19,11 @@ layout: default
         </p>
       {% endif %}
 
-      {% if page.date or page.tags %}
+      {% if page.tags %}
         <div class="page-meta" style="margin-top: 0.75rem;">
-          {% if page.date %}
-            <span>{{ page.date | date: "%B %d, %Y" }}</span>
-          {% endif %}
-          {% if page.tags %}
-            {% for tag in page.tags %}
-              <span class="tag">{{ tag }}</span>
-            {% endfor %}
-          {% endif %}
+          {% for tag in page.tags %}
+            <span class="tag">{{ tag }}</span>
+          {% endfor %}
         </div>
       {% endif %}
     </header>

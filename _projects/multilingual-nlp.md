@@ -14,7 +14,6 @@ tags:
   - NLP
 status: completed
 featured: true
-date: 2023-08-01
 github: https://github.com/berfinito/MultidialectalKnowledgeExtraction
 ---
 
@@ -104,4 +103,4 @@ Training   : PyTorch · Hugging Face Trainer · PEFT
 ## Outcome
 
 Awarded **Distinction** as part of the MSc Artificial Intelligence degree
-at the University of Bradford. Submitted August 2023.
+at the University of Bradford.

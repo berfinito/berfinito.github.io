@@ -12,7 +12,6 @@ tags:
   - Knowledge Graph
   - NetworkX
 featured: false
-date: 2025-05-01
 github: https://github.com/berfinito/dialectalwordmining
 ---
 
