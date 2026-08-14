@@ -118,7 +118,7 @@ permalink: /about/
     <div class="timeline-body">
       <div class="timeline-period">Dec 2023 - May 2024</div>
       <div class="timeline-title">Junior .NET Developer</div>
-      <div class="timeline-place">Path Product &amp; Software House · Leeds, UK</div>
+      <div class="timeline-place">Path Product &amp; Software House · Istanbul, TR</div>
       <p class="timeline-desc">
         Performance-tuned C# / .NET Core backend services, delivering ~35% API response
         time improvement through algorithmic optimisations and Redis distributed caching.

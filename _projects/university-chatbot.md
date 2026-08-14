@@ -15,7 +15,6 @@ tags:
 status: completed
 featured: true
 github: https://github.com/berfinito/Chatbot
-demo: https://huggingface.co/spaces/berfinito
 ---
 
 ## Overview
