@@ -2,7 +2,7 @@
 layout: page
 title: About
 label: About me
-description:
+description: "ML/AI and backend engineer based in Leeds. MSc CS & AI (Distinction). Background in .NET Core, NLP, LLM fine-tuning, and production systems."
 permalink: /about/
 ---
 
@@ -33,7 +33,7 @@ permalink: /about/
       with lab sessions and course preparation. During my final
       year I interned at Turkuvaz Media Group, one of Turkey's
       largest media conglomerates, where I worked in IT supporting
-      the infrastructure and internal systems of an organization
+      the infrastructure and internal systems of an organisation
       operating at real scale.
     </p>
     <p>
@@ -86,6 +86,7 @@ permalink: /about/
         Focused on machine learning, deep learning, and NLP. Dissertation on
         multidialectal knowledge extraction using transformer-based ASR and
         graph-based QA pipelines — applied to low-resource Kurdish and Zaza dialects.
+        <a href="https://drive.google.com/file/d/101f6homY0t8RSTQa8xnR7OxRQUSyPWfD/view" target="_blank" rel="noopener">Read the dissertation (PDF)</a>
       </p>
     </div>
   </div>
@@ -198,6 +199,7 @@ permalink: /about/
       <span class="tag tag-primary">SQL</span>
       <span class="tag tag-primary">C#</span>
       <span class="tag tag-primary">.NET Core</span>
+      <span class="tag">C++</span>
       <span class="tag">TypeScript</span>
       <span class="tag">Java</span>
       <span class="tag">Bash</span>
@@ -205,7 +207,7 @@ permalink: /about/
     </div>
   </div>
   <div class="tech-group">
-    <span class="tech-group-label">ML / AI</span>
+    <span class="tech-group-label">ML / Deep Learning</span>
     <div class="post-tags">
       <span class="tag tag-primary">PyTorch</span>
       <span class="tag tag-primary">HuggingFace Transformers</span>
@@ -216,6 +218,8 @@ permalink: /about/
       <span class="tag">BERTopic</span>
       <span class="tag">spaCy</span>
       <span class="tag">FAISS</span>
+      <span class="tag">NetworkX</span>
+      <span class="tag">Gradio</span>
     </div>
   </div>
   <div class="tech-group">
@@ -239,7 +243,6 @@ permalink: /about/
     <div class="post-tags">
       <span class="tag tag-primary">ASP.NET</span>
       <span class="tag tag-primary">FastAPI</span>
-      <span class="tag">Django</span>
       <span class="tag">REST APIs</span>
     </div>
   </div>
@@ -266,7 +269,6 @@ permalink: /about/
     <span class="tech-group-label">Cloud &amp; Infra</span>
     <div class="post-tags">
       <span class="tag tag-primary">GCP</span>
-      <span class="tag tag-primary">AWS</span>
     </div>
   </div>
 </div>
