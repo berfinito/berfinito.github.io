@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Projects
+description: "ML, NLP, and backend projects by Berfin Celik — LLM fine-tuning, ASR pipelines, deepfake detection, and more."
 permalink: /projects/
 ---
 
@@ -8,12 +9,13 @@ permalink: /projects/
   <span class="page-label">Work</span>
   <h1>Projects</h1>
   <p style="color:var(--text-muted);margin-top:.5rem;font-size:1rem;">
-    Things I've built, researched, or shipped — from MSc dissertation to production APIs.
+    Things I've built, researched, or shipped.
   </p>
 </div>
 
 <div class="card-grid">
-  {% for project in site.projects %}
+  {% assign featured = site.projects | where: "featured", true | sort: "order" %}
+  {% for project in featured %}
     <div class="card">
 
       <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:.5rem;">
@@ -48,4 +50,26 @@ permalink: /projects/
       </div>
     </div>
   {% endfor %}
+</div>
+
+<div class="coursework-section">
+  <h2 class="coursework-heading">Earlier &amp; Coursework</h2>
+  <ul class="coursework-list">
+    <li>
+      <a href="https://github.com/berfinito/Travelling-Salesman-Problem" target="_blank" rel="noopener">Travelling Salesman Problem — Heuristic Solvers</a>
+      <span class="coursework-meta">Java · Algorithms · exact and heuristic approaches (brute force, nearest neighbour, simulated annealing)</span>
+    </li>
+    <li>
+      <a href="https://github.com/berfinito/The-Reader-Writer-Problem" target="_blank" rel="noopener">The Reader-Writer Problem</a>
+      <span class="coursework-meta">Java · Concurrency · semaphore-based synchronisation, deadlock and starvation prevention</span>
+    </li>
+    <li>
+      <a href="https://github.com/berfinito/Plagiarism-Detector" target="_blank" rel="noopener">Plagiarism Detector</a>
+      <span class="coursework-meta">Python · NLP · document similarity using multiple metrics and fingerprinting</span>
+    </li>
+    <li>
+      <a href="https://github.com/berfinito/P2P-File-Sharing-Application" target="_blank" rel="noopener">P2P File Sharing Application</a>
+      <span class="coursework-meta">Python · Networking · central tracker, chunked file transfer, concurrent peers</span>
+    </li>
+  </ul>
 </div>

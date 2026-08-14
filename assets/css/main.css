@@ -1296,6 +1296,51 @@ tr:last-child td { border-bottom: none; }
 }
 
 /* ============================================================
+   COURSEWORK SECTION
+   ============================================================ */
+
+.coursework-section {
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--border);
+}
+
+.coursework-heading {
+  font-size: 0.85rem;
+  font-family: var(--mono);
+  color: var(--text-faint);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.coursework-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+
+.coursework-list li {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.coursework-list a {
+  font-size: 0.9rem;
+  color: var(--text);
+  font-family: var(--mono);
+}
+.coursework-list a:hover { color: var(--accent); }
+
+.coursework-meta {
+  font-size: 0.78rem;
+  color: var(--text-faint);
+}
+
+/* ============================================================
    UTILITY
    ============================================================ */
 

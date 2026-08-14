@@ -14,6 +14,7 @@ tags:
   - NLP
 status: completed
 featured: true
+order: 1
 github: https://github.com/berfinito/MultidialectalKnowledgeExtraction
 ---
 

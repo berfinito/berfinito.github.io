@@ -11,7 +11,8 @@ tags:
   - NLP
   - Knowledge Graph
   - NetworkX
-featured: false
+featured: true
+order: 4
 github: https://github.com/berfinito/dialectalwordmining
 ---
 
