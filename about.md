@@ -286,3 +286,22 @@ permalink: /about/
   </div>
 </div>
 
+---
+
+## Certifications
+
+<div class="cert-block">
+  <div class="cert-entry">
+    <div class="cert-title">IBM — Generative AI Language Modeling with Transformers</div>
+    <div class="cert-issuer">Coursera · Jul 2026</div>
+    <a href="https://coursera.org/verify/CLOUK490VF4L" target="_blank" rel="noopener" class="cert-verify">Verify ↗</a>
+  </div>
+  <div class="cert-entry">
+    <div class="cert-title">IBM — Introduction to Neural Networks and PyTorch</div>
+    <div class="cert-issuer">Coursera · Jul 2026</div>
+    <a href="https://coursera.org/verify/WKAQD4LAZB1Q" target="_blank" rel="noopener" class="cert-verify">Verify ↗</a>
+  </div>
+</div>
+
+<p style="margin-top:0.75rem;font-size:0.9rem;"><a href="/certifications/">All certifications →</a></p>
+

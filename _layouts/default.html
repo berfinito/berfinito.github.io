@@ -45,7 +45,7 @@
       </button>
 
       <ul class="nav-links" id="nav-links" role="list">
-        {% assign nav_pages = "Home,/|About,/about/|Projects,/projects/" | split: "|" %}
+        {% assign nav_pages = "Home,/|About,/about/|Projects,/projects/|Certs,/certifications/" | split: "|" %}
         {% for item in nav_pages %}
           {% assign parts = item | split: "," %}
           {% assign nav_label = parts[0] %}
