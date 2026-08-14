@@ -18,19 +18,20 @@ title: Home
       <dd>Leeds, UK</dd>
     </div>
     <div class="hero-data-row">
+      <dt>focus</dt>
+      <dd>NLP &nbsp;&middot;&nbsp; LLMs &nbsp;&middot;&nbsp; Backend &amp; Production ML</dd>
+    </div>
+    <div class="hero-data-row">
       <dt>status</dt>
       <dd><span class="hero-status-dot"></span>open to work, Graduate Route visa</dd>
     </div>
   </dl>
 
-  <p class="hero-bio">My background is backend engineering.
-  I spent several years building production systems with .NET
-  and ASP.NET Core across companies in Istanbul. When AI started
-  reshaping what software engineering means, I did not want to
-  work around it. I did an MSc in Computer Science and Artificial
-  Intelligence at the University of Bradford, graduated with a
-  Distinction, and now I work across both: backend systems and ML.
-  I am looking for work that keeps teaching me something new.</p>
+  <p class="hero-bio">Engineer working across backend systems and machine learning.
+  2+ years building production .NET services, then an MSc in Computer Science &amp; AI
+  (Distinction, University of Bradford). I build REST APIs, NLP pipelines, and LLM
+  fine-tuning systems — and ship them. Currently looking for ML or backend engineering
+  roles in the UK.</p>
 
   <div class="hero-actions">
     <a href="/projects/" class="btn btn-primary">View Projects</a>

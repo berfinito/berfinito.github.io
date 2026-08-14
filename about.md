@@ -2,6 +2,7 @@
 layout: page
 title: About
 label: About me
+toc: false
 description: "ML/AI and backend engineer based in Leeds. MSc CS & AI (Distinction). Background in .NET Core, NLP, LLM fine-tuning, and production systems."
 permalink: /about/
 ---
@@ -199,6 +200,7 @@ permalink: /about/
       <span class="tag tag-primary">SQL</span>
       <span class="tag tag-primary">C#</span>
       <span class="tag tag-primary">.NET Core</span>
+      <span class="tag">C</span>
       <span class="tag">C++</span>
       <span class="tag">TypeScript</span>
       <span class="tag">Java</span>
@@ -292,6 +294,8 @@ permalink: /about/
 
 ## Certifications
 
+<p class="cert-section-label">ML Specialisation (2026)</p>
+
 <div class="cert-block">
   <div class="cert-entry">
     <div class="cert-title">IBM — Generative AI Language Modeling with Transformers</div>
@@ -305,5 +309,15 @@ permalink: /about/
   </div>
 </div>
 
-<p style="margin-top:0.75rem;font-size:0.9rem;"><a href="/certifications/">All certifications →</a></p>
+<p class="cert-section-label" style="margin-top:1.5rem;">Foundations (2023–2024)</p>
+
+<ul class="cert-list-simple">
+  <li>IBM — Introduction to Artificial Intelligence (AI) · Aug 2024 · <a href="https://coursera.org/verify/0EX6GPBWPMFF" target="_blank" rel="noopener">Verify ↗</a></li>
+  <li>IBM — Introduction to Software Engineering · Aug 2024 · <a href="https://coursera.org/verify/QA24L68WR9WV" target="_blank" rel="noopener">Verify ↗</a></li>
+  <li>IBM — Getting Started with Git and GitHub · Aug 2023 · <a href="https://coursera.org/verify/74S52WHGE4DN" target="_blank" rel="noopener">Verify ↗</a></li>
+  <li>Meta — Introduction to Back-End Development · Aug 2023 · <a href="https://coursera.org/verify/5QJJJUGN43UN" target="_blank" rel="noopener">Verify ↗</a></li>
+  <li>Meta — Introduction to Front-End Development · Aug 2023 · <a href="https://coursera.org/verify/BHN4FKF9XV5Y" target="_blank" rel="noopener">Verify ↗</a></li>
+  <li>Meta — Introduction to Databases · Aug 2023 · <a href="https://coursera.org/verify/45RVRDUAZP5Q" target="_blank" rel="noopener">Verify ↗</a></li>
+  <li>Meta — Introduction to Databases for Back-End Development · Aug 2023 · <a href="https://coursera.org/verify/M2356MX48GB3" target="_blank" rel="noopener">Verify ↗</a></li>
+</ul>
 

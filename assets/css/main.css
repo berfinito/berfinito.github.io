@@ -1331,6 +1331,15 @@ tr:last-child td { border-bottom: none; }
   font-family: var(--mono);
 }
 
+.cert-section-label {
+  font-size: 0.78rem;
+  font-family: var(--mono);
+  color: var(--text-faint);
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  margin-bottom: 0.6rem;
+}
+
 .cert-list-simple {
   list-style: none;
   display: flex;
