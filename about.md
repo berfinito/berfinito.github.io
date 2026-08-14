@@ -24,7 +24,7 @@ permalink: /about/
   </div>
   <div class="about-text">
     <p>
-      I'm Berfin, an ML engineer with a backend background, based in Leeds.
+      I'm Berfin, an engineer working across backend systems and machine learning, based in Leeds.
     </p>
     <p>
       I studied Computer Engineering at Bahçeşehir University in

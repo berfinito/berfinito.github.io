@@ -11,7 +11,7 @@ title: Home
   <dl class="hero-data">
     <div class="hero-data-row">
       <dt>role</dt>
-      <dd>Software &amp; ML Engineer</dd>
+      <dd>ML / AI Engineer · Backend Engineer</dd>
     </div>
     <div class="hero-data-row">
       <dt>based</dt>
