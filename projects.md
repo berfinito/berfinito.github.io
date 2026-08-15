@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Projects
-description: "ML, NLP, and backend projects by Berfin Celik — LLM fine-tuning, ASR pipelines, deepfake detection, and more."
+description: "ML, NLP, and backend projects by Berfin Celik: LLM fine-tuning, ASR pipelines, deepfake detection, and more."
 permalink: /projects/
 ---
 
@@ -18,13 +18,11 @@ permalink: /projects/
   {% for project in featured %}
     <div class="card">
 
-      <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:.5rem;">
-        {% if project.label %}
-          <span class="card-label">{{ project.label }}</span>
-        {% elsif project.tags.size > 0 %}
-          <span class="card-label">{{ project.tags | first }}</span>
-        {% endif %}
-      </div>
+      {% if project.label %}
+        <span class="card-lang">{{ project.label }}</span>
+      {% elsif project.tags.size > 0 %}
+        <span class="card-lang">{{ project.tags | first }}</span>
+      {% endif %}
 
       <h3><a href="{{ project.github }}" target="_blank" rel="noopener">{{ project.title }}</a></h3>
 
@@ -33,21 +31,12 @@ permalink: /projects/
       {% endif %}
 
       <div class="card-footer">
-        <div class="post-tags">
-          {% for tag in project.tags limit: 4 %}
-            <span class="tag">{{ tag }}</span>
-          {% endfor %}
-          {% if project.tags.size > 4 %}
-            <span class="tag" style="color:var(--text-faint);">+{{ project.tags.size | minus: 4 }}</span>
-          {% endif %}
-        </div>
+        <a href="{{ project.github }}" target="_blank" rel="noopener" class="card-link">Code ↗</a>
         {% if project.demo %}
-          <a href="{{ project.demo }}" target="_blank" rel="noopener"
-             class="btn btn-primary" style="padding:.3rem .7rem;font-size:.75rem;flex-shrink:0;">
-            Demo ↗
-          </a>
+          <a href="{{ project.demo }}" target="_blank" rel="noopener" class="card-demo">Demo ↗</a>
         {% endif %}
       </div>
+
     </div>
   {% endfor %}
 </div>
@@ -55,21 +44,41 @@ permalink: /projects/
 <div class="coursework-section">
   <h2 class="coursework-heading">Earlier &amp; Coursework</h2>
   <ul class="coursework-list">
+
     <li>
-      <a href="https://github.com/berfinito/Travelling-Salesman-Problem" target="_blank" rel="noopener">Travelling Salesman Problem — Heuristic Solvers</a>
-      <span class="coursework-meta">Java · Algorithms · exact and heuristic approaches (brute force, nearest neighbour, simulated annealing)</span>
+      <a href="https://github.com/berfinito/3-cushion-billard-game" target="_blank" rel="noopener">3-Cushion Billiards Game</a>
+      <span class="coursework-meta">Two-player billiards simulation with a physics engine and online multiplayer via a Java client-server architecture.</span>
     </li>
+
+    <li>
+      <a href="https://github.com/berfinito/MapApp" target="_blank" rel="noopener">EV Chargepoint Map App</a>
+      <span class="coursework-meta">Android app that displays EV chargepoint locations across West Yorkshire on an interactive map, with user auth, admin panel, and CSV data import.</span>
+    </li>
+
+    <li>
+      <a href="https://github.com/berfinito/Web-Programming-Project" target="_blank" rel="noopener">Web Programming Project</a>
+      <span class="coursework-meta">Java Spring Boot MVC application with a database-backed post system, custom validation, and internationalisation support.</span>
+    </li>
+
+    <li>
+      <a href="https://github.com/berfinito/Travelling-Salesman-Problem" target="_blank" rel="noopener">Travelling Salesman Problem</a>
+      <span class="coursework-meta">Java; implements and compares exact and heuristic solvers (greedy, nearest-neighbour, divide-and-conquer) on a 47-city dataset.</span>
+    </li>
+
     <li>
       <a href="https://github.com/berfinito/The-Reader-Writer-Problem" target="_blank" rel="noopener">The Reader-Writer Problem</a>
-      <span class="coursework-meta">Java · Concurrency · semaphore-based synchronisation, deadlock and starvation prevention</span>
+      <span class="coursework-meta">Java; semaphore-based solution to the concurrent reader-writer problem with deadlock and starvation prevention.</span>
     </li>
+
     <li>
       <a href="https://github.com/berfinito/Plagiarism-Detector" target="_blank" rel="noopener">Plagiarism Detector</a>
-      <span class="coursework-meta">Python · NLP · document similarity using multiple metrics and fingerprinting</span>
+      <span class="coursework-meta">C++; detects document similarity using multiple comparison metrics and fingerprinting techniques.</span>
     </li>
+
     <li>
       <a href="https://github.com/berfinito/P2P-File-Sharing-Application" target="_blank" rel="noopener">P2P File Sharing Application</a>
-      <span class="coursework-meta">Python · Networking · central tracker, chunked file transfer, concurrent peers</span>
+      <span class="coursework-meta">Python; peer-to-peer file sharing over LAN with auto-discovery of peers, chunked transfer, and concurrent upload/download.</span>
     </li>
+
   </ul>
 </div>
