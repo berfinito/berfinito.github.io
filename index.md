@@ -5,7 +5,6 @@ title: Home
 
 <section class="hero">
 
-  <p class="hero-prompt">whoami</p>
   <h1>Berfin Celik</h1>
 
   <dl class="hero-data">

@@ -21,9 +21,18 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
 
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%236366f1'/><text x='50%25' y='54%25' dominant-baseline='middle' text-anchor='middle' font-family='monospace' font-weight='700' font-size='18' fill='white'>B</text></svg>" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%232F5FE8'/><text x='50%25' y='54%25' dominant-baseline='middle' text-anchor='middle' font-family='sans-serif' font-weight='700' font-size='18' fill='white'>B</text></svg>" />
+
+  <script>
+  (function() {
+    var t = localStorage.getItem('theme');
+    if (t === 'dark' || t === 'light') {
+      document.documentElement.setAttribute('data-theme', t);
+    }
+  })();
+  </script>
 
   <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}" />
 
@@ -36,13 +45,7 @@
   <nav class="site-nav" aria-label="Main navigation">
     <div class="nav-inner">
 
-      <a class="nav-logo" href="{{ '/' | relative_url }}">
-        <span>~/</span>{{ site.author.name | split: " " | first | downcase }}
-      </a>
-
-      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-links">
-        <span></span><span></span><span></span>
-      </button>
+      <a class="nav-logo" href="{{ '/' | relative_url }}">{{ site.author.name }}</a>
 
       <ul class="nav-links" id="nav-links" role="list">
         {% assign nav_pages = "Home,/|About,/about/|Projects,/projects/" | split: "|" %}
@@ -58,6 +61,29 @@
           </li>
         {% endfor %}
       </ul>
+
+      <button class="theme-toggle" aria-label="Toggle colour theme" title="Toggle light/dark">
+        <svg class="icon-moon" width="16" height="16" viewBox="0 0 24 24" fill="none"
+             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+        </svg>
+        <svg class="icon-sun" width="16" height="16" viewBox="0 0 24 24" fill="none"
+             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <circle cx="12" cy="12" r="5"/>
+          <line x1="12" y1="1" x2="12" y2="3"/>
+          <line x1="12" y1="21" x2="12" y2="23"/>
+          <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+          <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+          <line x1="1" y1="12" x2="3" y2="12"/>
+          <line x1="21" y1="12" x2="23" y2="12"/>
+          <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+          <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+        </svg>
+      </button>
+
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-links">
+        <span></span><span></span><span></span>
+      </button>
 
     </div>
   </nav>
@@ -106,6 +132,19 @@
           btn.classList.remove('open');
           btn.setAttribute('aria-expanded', false);
         }
+      });
+    }
+
+    /* theme toggle */
+    var themeBtn = document.querySelector('.theme-toggle');
+    if (themeBtn) {
+      themeBtn.addEventListener('click', function () {
+        var current = document.documentElement.getAttribute('data-theme');
+        var isDark = current === 'dark' ||
+          (!current && window.matchMedia('(prefers-color-scheme: dark)').matches);
+        var next = isDark ? 'light' : 'dark';
+        document.documentElement.setAttribute('data-theme', next);
+        localStorage.setItem('theme', next);
       });
     }
 
