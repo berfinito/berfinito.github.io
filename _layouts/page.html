@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<div class="page-wrapper">
+<div class="page-wrapper{% if page.toc != false %} has-toc{% endif %}">
 
   <article class="page-content">
 
@@ -28,7 +28,7 @@ layout: default
       {% endif %}
     </header>
 
-    <div class="post-body">
+    <div class="post-body{% if page.wide %} post-body--wide{% endif %}">
       {{ content }}
     </div>
 

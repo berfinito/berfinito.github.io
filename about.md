@@ -3,6 +3,7 @@ layout: page
 title: About
 label: About me
 toc: false
+wide: true
 description: "ML/AI and backend engineer based in Leeds. MSc CS & AI (Distinction). Background in .NET Core, NLP, LLM fine-tuning, and production systems."
 permalink: /about/
 ---

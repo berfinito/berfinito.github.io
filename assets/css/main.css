@@ -295,6 +295,10 @@ button:focus-visible,
    ============================================================ */
 
 .page-wrapper {
+  display: block;
+}
+
+.page-wrapper.has-toc {
   display: grid;
   grid-template-columns: 1fr 200px;
   gap: 3rem;
@@ -340,7 +344,7 @@ button:focus-visible,
 .toc-list a.toc-active { color: var(--accent); opacity: 1; }
 
 @media (max-width: 860px) {
-  .page-wrapper { grid-template-columns: 1fr; }
+  .page-wrapper.has-toc { grid-template-columns: 1fr; }
   .page-toc { display: none; }
 }
 
@@ -376,6 +380,10 @@ button:focus-visible,
 
 .post-body {
   max-width: 72ch;
+}
+
+.post-body--wide {
+  max-width: none;
 }
 
 .post-body h2 {
@@ -785,9 +793,10 @@ button:focus-visible,
    ============================================================ */
 
 .about-intro {
-  display: flex;
-  gap: 2rem;
-  align-items: flex-start;
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  gap: 2.5rem;
+  align-items: start;
   margin-bottom: 2rem;
 }
 
@@ -800,9 +809,9 @@ button:focus-visible,
 }
 
 .about-avatar {
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  border-radius: 16px;
   object-fit: cover;
   border: 2px solid var(--border);
 }
@@ -1031,9 +1040,9 @@ button:focus-visible,
    ============================================================ */
 
 @media (max-width: 640px) {
-  .about-intro { flex-direction: column; align-items: center; }
-  .about-avatar-col { flex-direction: row; align-items: center; gap: 1.25rem; width: 100%; }
-  .about-avatar { width: 90px; height: 90px; }
+  .about-intro { grid-template-columns: 1fr; }
+  .about-avatar-col { flex-direction: row; align-items: center; gap: 1.25rem; }
+  .about-avatar { width: 100px; aspect-ratio: 1; border-radius: 12px; }
   .cv-download { flex: 1; justify-content: center; }
   .tech-group { flex-direction: column; gap: 0.4rem; }
   .tech-group-label { width: auto; }
