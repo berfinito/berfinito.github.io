@@ -25,11 +25,11 @@ enabling structured exploration of cross-dialect vocabulary.
 
 ## What it does
 
-- **Model comparison** — tests multiple NLP models on dialectal word extraction tasks
+- **Model comparison** - tests multiple NLP models on dialectal word extraction tasks
   to benchmark which architectures handle low-resource dialect variation best
-- **Sentence extraction** — pulls semantically relevant sentences from raw dialectal
+- **Sentence extraction** - pulls semantically relevant sentences from raw dialectal
   corpora based on extracted keyword anchors
-- **Knowledge graph construction** — connects extracted entities and relations into
+- **Knowledge graph construction** - connects extracted entities and relations into
   a queryable graph structure using NetworkX
 
 ## Relation to MSc Dissertation

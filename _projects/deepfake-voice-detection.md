@@ -40,7 +40,7 @@ conditions.
   pitch shift, time stretch
 - 80 / 10 / 10 train / val / test split, stratified by source
 
-## Architecture — hybrid pipeline
+## Architecture: hybrid pipeline
 
 ### Branch 1: spectrogram CNN
 
@@ -73,7 +73,7 @@ conditions.
 The model generalises well to unseen TTS systems not seen during training
 (evaluated on Bark-generated samples held entirely out of training).
 
-## API — containerised serving
+## API: containerised serving
 
 ```python
 # POST /detect

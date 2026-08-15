@@ -4,7 +4,7 @@ title: "Multidialectal NLP Pipeline (MSc Dissertation)"
 label: NLP · Research
 description: >-
   ASR, topic modelling, and knowledge graph construction for Turkish, Kurmanji,
-  and Zazaki — three languages with minimal NLP resources. MSc distinction project.
+  and Zazaki, three languages with minimal NLP resources. MSc distinction project.
 tags:
   - Whisper
   - Wav2Vec2
@@ -23,7 +23,7 @@ github: https://github.com/berfinito/MultidialectalKnowledgeExtraction
 MSc dissertation project. A full NLP pipeline for three closely related but
 linguistically distinct languages spoken in Turkey and northern Iraq:
 **Turkish**, **Kurmanji Kurdish**, and **Zazaki**. All three are
-low-resource — existing NLP tooling for Kurmanji and Zazaki is sparse,
+low-resource; existing NLP tooling for Kurmanji and Zazaki is sparse,
 and cross-dialect transfer is not well studied.
 
 The pipeline covers automatic speech recognition (ASR), topic discovery,
@@ -38,7 +38,7 @@ features across related dialects can be leveraged when resources are scarce.
 
 ## Pipeline stages
 
-### Stage 1 — Automatic Speech Recognition
+### Stage 1: Automatic Speech Recognition
 
 **Turkish** (higher-resource path):
 - Fine-tuned `openai/whisper-medium` on Mozilla Common Voice 13 Turkish subset
@@ -54,7 +54,7 @@ Training details:
 - CTC loss, AdamW, linear warmup over 10 % of steps
 - Data augmentation: speed perturbation (0.9×, 1.1×), SpecAugment
 
-### Stage 2 — Topic modelling (BERTopic)
+### Stage 2: Topic modelling (BERTopic)
 
 - Transcripts segmented into utterance-level chunks
 - Multilingual sentence embeddings: `paraphrase-multilingual-mpnet-base-v2`
@@ -64,7 +64,7 @@ Training details:
   embeddings revealed 14 semantically equivalent topics shared across all
   three languages
 
-### Stage 3 — Knowledge graph construction
+### Stage 3: Knowledge graph construction
 
 - Entity extraction: multilingual NER (XLM-RoBERTa fine-tuned on WikiANN)
 - Relation extraction: rule-based patterns + dependency parsing (spaCy + custom
@@ -79,7 +79,7 @@ Training details:
 - Transfer learning from Turkish significantly improves Kurmanji ASR compared
   to training from the XLSR multilingual base alone (WER gap: ~8 pp)
 - BERTopic topic alignment across dialects shows substantial conceptual overlap
-  in domains of family, agriculture, and governance — consistent with shared
+  in domains of family, agriculture, and governance, consistent with shared
   cultural history
 - Knowledge graph communities map partially onto geographic dialect boundaries
 

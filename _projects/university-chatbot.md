@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "University Chatbot — LLM Fine-Tuning & RAG"
+title: "University Chatbot: LLM Fine-Tuning & RAG"
 label: NLP · LLM
 description: >-
   Domain-specific chatbot for university FAQs. Benchmarked 4 models,
@@ -26,7 +26,7 @@ to answer student questions accurately without hallucinating policy details.
 
 ## Problem
 
-University support teams handle hundreds of repetitive queries — deadlines,
+University support teams handle hundreds of repetitive queries: deadlines,
 module registrations, academic policies. Generic LLMs either hallucinate
 institution-specific rules or refuse to answer. The goal was a model that
 knows the university's actual documentation and stays within it.
