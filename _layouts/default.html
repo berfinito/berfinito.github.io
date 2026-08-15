@@ -45,7 +45,7 @@
   <nav class="site-nav" aria-label="Main navigation">
     <div class="nav-inner">
 
-      <a class="nav-logo" href="{{ '/' | relative_url }}">{{ site.author.name }}</a>
+      <a class="nav-logo" href="{{ '/' | relative_url }}" aria-label="{{ site.author.name }}">BC</a>
 
       <ul class="nav-links" id="nav-links" role="list">
         {% assign nav_pages = "Home,/|About,/about/|Projects,/projects/" | split: "|" %}

@@ -166,16 +166,28 @@ code {
 }
 
 .nav-logo {
-  font-size: 0.95rem;
-  font-weight: 600;
+  font-size: 0.75rem;
+  font-weight: 700;
   color: var(--text);
   text-decoration: none;
   white-space: nowrap;
   flex-shrink: 0;
-  letter-spacing: -0.01em;
-  transition: color 0.15s;
+  letter-spacing: 0.04em;
+  transition: color 0.15s, background 0.15s;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  border: 1.5px solid var(--border);
 }
-.nav-logo:hover { color: var(--accent); opacity: 1; }
+.nav-logo:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+  opacity: 1;
+  background: transparent;
+}
 
 .nav-links {
   display: flex;
@@ -437,6 +449,27 @@ button:focus-visible,
 .hero {
   padding: 5rem 0 4rem;
   max-width: 740px;
+}
+
+.hero-split {
+  display: flex;
+  align-items: center;
+  gap: 3.5rem;
+  max-width: none;
+}
+
+.hero-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.hero-photo {
+  width: 300px;
+  flex-shrink: 0;
+  border-radius: 16px;
+  display: block;
+  object-fit: cover;
+  aspect-ratio: 3 / 4;
 }
 
 .hero h1 {
@@ -1062,31 +1095,6 @@ button:focus-visible,
 }
 
 /* ============================================================
-   HOME HIGHLIGHTS STRIP
-   ============================================================ */
-
-.home-highlights {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 0.5rem 0.75rem;
-  margin-top: 2.5rem;
-  padding-top: 2rem;
-  border-top: 1px solid var(--border);
-}
-
-.highlight-item {
-  font-size: 0.8rem;
-  font-weight: 500;
-  color: var(--text-faint);
-}
-
-.highlight-sep {
-  font-size: 0.8rem;
-  color: var(--border);
-}
-
-/* ============================================================
    HOME SECTIONS
    ============================================================ */
 
@@ -1243,52 +1251,6 @@ button:focus-visible,
 }
 .cert-list-simple a:hover { color: var(--accent); opacity: 1; }
 
-/* ============================================================
-   COURSEWORK SECTION
-   ============================================================ */
-
-.coursework-section {
-  margin-top: 3rem;
-  padding-top: 2rem;
-  border-top: 1px solid var(--border);
-}
-
-.coursework-heading {
-  font-size: 0.82rem;
-  font-weight: 600;
-  color: var(--text-faint);
-  letter-spacing: 0.07em;
-  text-transform: uppercase;
-  margin-top: 0;
-  margin-bottom: 1rem;
-}
-
-.post-body .coursework-list,
-.coursework-list {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  gap: 0.65rem;
-}
-
-.coursework-list li {
-  display: flex;
-  flex-direction: column;
-  gap: 0.15rem;
-}
-
-.coursework-list a {
-  font-size: 0.9rem;
-  font-weight: 500;
-  color: var(--text-muted);
-  transition: color 0.15s;
-}
-.coursework-list a:hover { color: var(--accent); opacity: 1; }
-
-.coursework-meta {
-  font-size: 0.78rem;
-  color: var(--text-faint);
-}
 
 /* ============================================================
    UTILITY
@@ -1332,6 +1294,17 @@ button:focus-visible,
   .card-grid { grid-template-columns: 1fr; }
 
   .hero { padding: 3rem 0 2rem; }
+
+  .hero-split {
+    flex-direction: column-reverse;
+    gap: 2rem;
+  }
+
+  .hero-photo {
+    width: 140px;
+    aspect-ratio: 1;
+    align-self: center;
+  }
 }
 
 @media (max-width: 480px) {
