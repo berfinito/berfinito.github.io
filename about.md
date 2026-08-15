@@ -39,8 +39,8 @@ permalink: /about/
     </p>
     <p>
       After graduating I joined Argevi as a software engineer,
-      building backend systems with ASP.NET Core across a project
-      management tool and an e-commerce platform. The project I
+      building the backend of a real-time industrial automation system,
+      the kind that routes items along warehouse conveyor lines. The project I
       remember most from that time is implementing OPC communication,
       an industrial protocol the company had wanted to use but had not.
       We started from scratch, figured it out, and got it into production.
@@ -122,17 +122,20 @@ permalink: /about/
       <div class="timeline-title">Junior .NET Developer</div>
       <div class="timeline-place">Path Product &amp; Software House · Istanbul, TR</div>
       <p class="timeline-desc">
-        Performance-tuned C# / .NET Core backend services, delivering ~35% API response
-        time improvement through algorithmic optimisations and Redis distributed caching.
-        Worked on Onion Architecture microservices and Docker containerisation in an
-        Agile/Scrum team.
+        Developed a large-scale school management platform end to end for post-pandemic
+        hybrid (online and in-person) teaching, covering course scheduling, learning
+        materials, assessments and grading, and automated question generation. Implemented
+        the platform's multi-layered microservices architecture based on Onion Architecture,
+        using RabbitMQ for messaging between services, with Redis distributed caching and
+        Docker. Documented and tested APIs with Swagger.
       </p>
       <div class="post-tags" style="margin-top:.6rem;">
         <span class="tag">C#</span>
         <span class="tag">.NET Core</span>
+        <span class="tag">RabbitMQ</span>
         <span class="tag">Redis</span>
         <span class="tag">Docker</span>
-        <span class="tag">Microservices</span>
+        <span class="tag">Swagger</span>
       </div>
     </div>
   </div>
@@ -144,17 +147,22 @@ permalink: /about/
       <div class="timeline-title">Software Engineer</div>
       <div class="timeline-place">Argevi Software &amp; Automation · Istanbul, TR</div>
       <p class="timeline-desc">
-        Built a Project Management Tool (ASP.NET Core + React) and an E-commerce Platform
-        (.NET Core + Angular). Query tuning reduced average query time by ~40%.
-        Used Kubernetes for orchestration, RabbitMQ for message brokering, and OPC/TCP-IP
-        for industrial protocol integration.
+        Built the backend of a real-time industrial automation system for warehouse-scale
+        conveyor logistics using .NET Core and .NET Framework: processed live barcode
+        signals from PLCs and returned categorisation and routing decisions directing each
+        item to the correct chute. Developed live monitoring with real-time screens for
+        item flow, vehicle and gate status, and built operational dashboards with
+        Elasticsearch, Logstash, and Kibana. Led a 6-month R&amp;D effort that adapted
+        the OPC industrial protocol into the company's stack. Designed efficient database
+        schemas and optimised queries on high-traffic workloads.
       </p>
       <div class="post-tags" style="margin-top:.6rem;">
-        <span class="tag">ASP.NET Core</span>
-        <span class="tag">React</span>
-        <span class="tag">Kubernetes</span>
-        <span class="tag">RabbitMQ</span>
-        <span class="tag">Angular</span>
+        <span class="tag">.NET Core</span>
+        <span class="tag">.NET Framework</span>
+        <span class="tag">PLC</span>
+        <span class="tag">Elasticsearch</span>
+        <span class="tag">Kibana</span>
+        <span class="tag">OPC</span>
       </div>
     </div>
   </div>
@@ -246,6 +254,9 @@ permalink: /about/
       <span class="tag tag-primary">ASP.NET</span>
       <span class="tag tag-primary">FastAPI</span>
       <span class="tag">REST APIs</span>
+      <span class="tag">Swagger</span>
+      <span class="tag">RabbitMQ</span>
+      <span class="tag">OPC / TCP-IP</span>
     </div>
   </div>
   <div class="tech-group">
@@ -255,16 +266,16 @@ permalink: /about/
       <span class="tag tag-primary">Redis</span>
       <span class="tag">MySQL</span>
       <span class="tag">SQLite</span>
-      <span class="tag">MongoDB</span>
     </div>
   </div>
   <div class="tech-group">
-    <span class="tech-group-label">MLOps</span>
+    <span class="tech-group-label">DevOps &amp; Monitoring</span>
     <div class="post-tags">
       <span class="tag tag-primary">Docker</span>
       <span class="tag tag-primary">GitHub Actions</span>
-      <span class="tag">Kubernetes</span>
-      <span class="tag">RabbitMQ</span>
+      <span class="tag">Elasticsearch</span>
+      <span class="tag">Logstash</span>
+      <span class="tag">Kibana</span>
     </div>
   </div>
   <div class="tech-group">
