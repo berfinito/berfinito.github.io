@@ -459,27 +459,6 @@ button:focus-visible,
   max-width: 740px;
 }
 
-.hero-split {
-  display: flex;
-  align-items: center;
-  gap: 3.5rem;
-  max-width: none;
-}
-
-.hero-content {
-  flex: 1;
-  min-width: 0;
-}
-
-.hero-photo {
-  width: 300px;
-  flex-shrink: 0;
-  border-radius: 16px;
-  display: block;
-  object-fit: cover;
-  aspect-ratio: 3 / 4;
-}
-
 .hero h1 {
   font-size: clamp(2.5rem, 6vw, 4rem);
   font-weight: 700;
@@ -794,7 +773,7 @@ button:focus-visible,
 
 .about-intro {
   display: grid;
-  grid-template-columns: 260px 1fr;
+  grid-template-columns: 260px minmax(0, 1fr);
   gap: 2.5rem;
   align-items: start;
   margin-bottom: 2rem;
@@ -1303,17 +1282,6 @@ button:focus-visible,
   .card-grid { grid-template-columns: 1fr; }
 
   .hero { padding: 3rem 0 2rem; }
-
-  .hero-split {
-    flex-direction: column-reverse;
-    gap: 2rem;
-  }
-
-  .hero-photo {
-    width: 140px;
-    aspect-ratio: 1;
-    align-self: center;
-  }
 }
 
 @media (max-width: 480px) {

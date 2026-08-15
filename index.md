@@ -3,9 +3,7 @@ layout: default
 title: Home
 ---
 
-<section class="hero hero-split">
-
-  <div class="hero-content">
+<section class="hero">
 
     <h1>Berfin Celik</h1>
 
@@ -80,11 +78,6 @@ title: Home
       </a>
     </div>
 
-  </div>
-
-  <img src="/assets/images/profile.jpg"
-       alt="Berfin Celik"
-       class="hero-photo" />
 
 </section>
 
