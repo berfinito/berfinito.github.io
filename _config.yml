@@ -1,10 +1,11 @@
 title: Berfin Celik
 tagline: ML/AI & Backend Engineer
 description: >-
-  ML/AI and backend engineer — .NET Core, NLP, LLM fine-tuning, production systems.
+  ML/AI and backend engineer: .NET Core, NLP, LLM fine-tuning, production systems.
   MSc CS & AI (Distinction). Based in Leeds, UK. Graduate Route visa.
 url: "https://berfinito.github.io"
 baseurl: ""
+image: /assets/images/og-image.png
 
 author:
   name: Berfin Celik
