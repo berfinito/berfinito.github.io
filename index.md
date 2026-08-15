@@ -29,7 +29,7 @@ title: Home
   <p class="hero-bio">Engineer working across backend systems and machine learning.
   2+ years building production .NET services, then an MSc in Computer Science &amp; AI
   (Distinction, University of Bradford). I build REST APIs, NLP pipelines, and LLM
-  fine-tuning systems — and ship them. Currently looking for ML or backend engineering
+  fine-tuning systems, and I ship them. Currently looking for ML or backend engineering
   roles in the UK.</p>
 
   <div class="hero-actions">
@@ -78,4 +78,42 @@ title: Home
     </a>
   </div>
 
+</section>
+
+<div class="home-highlights">
+  <span class="highlight-item">MSc CS &amp; AI, Distinction</span>
+  <span class="highlight-sep" aria-hidden="true">·</span>
+  <span class="highlight-item">2+ years production backend</span>
+  <span class="highlight-sep" aria-hidden="true">·</span>
+  <span class="highlight-item">10+ shipped projects</span>
+</div>
+
+<section class="home-section">
+  <div class="section-header">
+    <h2 class="section-title">Selected Projects</h2>
+    <a href="/projects/" class="section-link">View all projects &rarr;</a>
+  </div>
+
+  <div class="card-grid">
+    {% assign featured = site.projects | where: "featured", true | sort: "order" %}
+    {% for project in featured %}
+      <div class="card">
+        {% if project.label %}
+          <span class="card-lang">{{ project.label }}</span>
+        {% elsif project.tags.size > 0 %}
+          <span class="card-lang">{{ project.tags | first }}</span>
+        {% endif %}
+        <h3><a href="{{ project.github }}" target="_blank" rel="noopener">{{ project.title }}</a></h3>
+        {% if project.description %}
+          <p class="card-desc">{{ project.description }}</p>
+        {% endif %}
+        <div class="card-footer">
+          <a href="{{ project.github }}" target="_blank" rel="noopener" class="card-link">Code ↗</a>
+          {% if project.demo %}
+            <a href="{{ project.demo }}" target="_blank" rel="noopener" class="card-demo">Demo ↗</a>
+          {% endif %}
+        </div>
+      </div>
+    {% endfor %}
+  </div>
 </section>

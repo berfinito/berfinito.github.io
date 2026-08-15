@@ -1062,6 +1062,31 @@ button:focus-visible,
 }
 
 /* ============================================================
+   HOME HIGHLIGHTS STRIP
+   ============================================================ */
+
+.home-highlights {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem 0.75rem;
+  margin-top: 2.5rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--border);
+}
+
+.highlight-item {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--text-faint);
+}
+
+.highlight-sep {
+  font-size: 0.8rem;
+  color: var(--border);
+}
+
+/* ============================================================
    HOME SECTIONS
    ============================================================ */
 
